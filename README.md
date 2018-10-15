@@ -1,6 +1,6 @@
 # 🤓 Utility bash scripts
 
-[![Contributors needed](https://img.shields.io/badge/contributors-needed-yellow.svg)](CONTRIBUTING.md)
+[![Contributors needed](https://img.shields.io/badge/contributors-needed-yellow.svg)](.github/CONTRIBUTING.md)
 
 Utility bash scripts to do automatable tasks with a single command. We have scripts to download youtube videos, download music from youtube, convert media files, etc. 
 
@@ -115,6 +115,14 @@ Script: [empty-trash](empty-trash)
 empty-trash
 ```
 
+### 🏹 Create custom short link for a GitHub URL using git.io
+
+Script: [gh-url](gh-url)
+
+```sh
+gh-url <url-to-shorten> <short-code>
+```
+
 ### 🤐 ZIP without .DS_Store on a Mac
 
 Script: [maczip](maczip)
@@ -129,4 +137,24 @@ Script: [delete-ss](delete-ss)
 
 ```sh
 delete-ss
+```
+
+### ⏲  Get time at a location
+
+Script: [clock](clock)
+Dependencies: Linux: [timedatectl](https://www.freedesktop.org/software/systemd/man/timedatectl.html) Mac: sudo
+
+```sh
+clock list
+clock <Time Zone>
+```
+
+### 🌧 Get weather forecast
+
+Script: [weather](weather)
+Dependencies: [curl](https://curl.haxx.se/)
+
+```sh
+weather <City Name>
+weather # Will use your IP Address location
 ```
